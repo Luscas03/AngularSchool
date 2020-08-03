@@ -11,7 +11,18 @@ export class FormCursoComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.curso.ativo = true;
   }
+onsubmit(form){
+console.log("Curso:", this.curso, "Formulário:", form);
+if(form.invalid){
+  alert("Erro");
+}
+else {
+  alert("Cadastrado!")
+}
 
+  
+}
 }
  

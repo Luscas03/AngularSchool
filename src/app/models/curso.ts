@@ -4,5 +4,5 @@ export class Curso {
     datatermino:string;
     quanthoras:number;
     cargahoraria:number;
-    ativo:boolean = true
+    ativo:boolean;
 }

@@ -1,28 +1,33 @@
 <section class="container">
-    <form>
-      <div class="form-group">
-        <label for="nome" id="tnome">Nome:</label>
-        <input type="text" class="form-control" id="nome" [(ngModel)]="curso.nome" placeholder="Nome" name="nome" required>
-      </div>
-      <div class="form-group">
-        <label for="inicio" id="tinicio">Início:</label>
-        <input type="text" class="form-control" id="inicio" [(ngModel)]="curso.datainicio" placeholder="Data de Início" name="inicio" required>
-      </div>
-      <div class="form-group">
-        <label for="termino" id="ttermino">Término:</label>
-        <input type="text" class="form-control" id="termino" [(ngModel)]="curso.datatermino" placeholder="Data de Término" name="termino" required>
-      </div>
-      <div class="form-group">
-        <label for="qtdhoras" id="tqtdhoras">Quantidade de Horas:</label>
-        <input type="text" class="form-control" id="qtdhoras" [(ngModel)]="curso.quanthoras" placeholder="Quantidade de Horas" name="qtdhoras" required>
-      </div>
-      <div class="form-group">
-        <label for="choraria" id="tchoraria">Carga Horária:</label>
-        <input type="text" class="form-control" id="choraria" [(ngModel)]="curso.cargahoraria" placeholder="Carga Horária" name="choraria" required>
-      </div>
-      <div class="form-group">
-          <button type="submit" class="btn btn-dark">Enviar</button>
-        </div>
-    </form>
-    
+  <form #fc="ngForm" (ngSubmit)="onsubmit(fc)">
+    <div class="form-group">
+      <label for="nome" id="tnome">Nome:</label>
+      <input type="text" class="form-control" id="nome" [(ngModel)]="curso.nome" placeholder="Nome" name="nome"
+        required>
+    </div>
+    <div class="form-group">
+      <label for="inicio" id="tinicio">Início:</label>
+      <input type="text" class="form-control" id="inicio" [(ngModel)]="curso.datainicio" placeholder="dd/mm/aaaa"
+        name="inicio" required>
+    </div>
+    <div class="form-group">
+      <label for="termino" id="ttermino">Término:</label>
+      <input type="text" class="form-control" id="termino" [(ngModel)]="curso.datatermino" placeholder="dd/mm/aaaa"
+        name="termino" required>
+    </div>
+    <div class="form-group">
+      <label for="qtdhoras" id="tqtdhoras">Quantidade de Horas:</label>
+      <input type="text" class="form-control" id="qtdhoras" [(ngModel)]="curso.quanthoras"
+        placeholder="Quantidade de Horas" name="qtdhoras" required>
+    </div>
+    <div class="form-group">
+      <label for="choraria" id="tchoraria">Carga Horária:</label>
+      <input type="text" class="form-control" id="choraria" [(ngModel)]="curso.cargahoraria" placeholder="Carga Horária"
+        name="choraria" required>
+    </div>
+    <div class="form-group">
+      <button type="submit" class="btn btn-dark" [disabled]="fc.invalid">Enviar</button>
+    </div>
+  </form>
+
 </section>
