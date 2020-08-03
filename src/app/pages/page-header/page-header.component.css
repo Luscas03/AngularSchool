@@ -1,0 +1,27 @@
+header {
+    /* background-image:url(src\assets\fundo.png);  */
+ background-image: linear-gradient(to right, purple , black);;
+    background-position: center;
+    background-size: cover;
+    min-height: 150px;
+}
+header img { 
+    max-width: 280px;
+    padding: 20px;
+}
+header div { 
+background-color: rgb(28,27,41);
+}
+img {
+
+    transition: all 0.5s;
+    cursor: pointer;
+    
+    
+   
+}
+img:hover{
+   
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(255, 0, 0, 0.548));
+    filter: drop-shadow(15px 10px 5px rgba(255, 0, 0, 0.548));
+}

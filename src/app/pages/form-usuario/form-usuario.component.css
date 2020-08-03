@@ -1,0 +1,31 @@
+.container {
+    color: white;
+    /* font-size: 20px;
+    font-weight: bold;
+    font-style: italic; */
+    margin-top: 50px;
+    padding: 1%;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    background-image: linear-gradient(to right, black , purple);
+}
+#tnome,#temail,#tpws {
+   font-style: italic;
+   text-shadow: 5px 5px 5px rgb(0, 0, 0);
+}
+#btns {
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+}
+#nome,#email,#pws,#confpws {
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    background-color: white;
+    color: black;
+    border-color: black;
+}
+::placeholder {
+    color: black;
+}
+form {
+    background-color:  rgb(28,27,41);
+   padding: 10%;
+   margin: 0.5%;
+}
