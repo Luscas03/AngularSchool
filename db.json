@@ -2,17 +2,17 @@
   "usuario": [
     {
       "ativo": true,
-      "nome": "feijão",
-      "email": "aaa@gmail.com",
-      "pws": "123456789",
-      "id": 1
-    },
-    {
-      "ativo": true,
       "nome": "Lucas Almeida da Silva",
       "email": "luquinhalucas03@hotmail.com.br",
       "pws": "123456789",
       "id": 2
+    },
+    {
+      "ativo": true,
+      "nome": "Computador",
+      "email": "aaa@gmail.com",
+      "pws": "123456789",
+      "id": 3
     }
   ]
 }

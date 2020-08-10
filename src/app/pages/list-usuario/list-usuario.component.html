@@ -1,8 +1,8 @@
 <section class="container">
     <div class="row">
-        <table>
+        
             <table class="table">
-              <tr>
+                <tr>
                     <th>
                         Id:
                     </th>
@@ -12,18 +12,24 @@
                     <th>
                         E-mail:
                     </th>
+                   
                 </tr>
-                <tr *ngFor = "let u of users">
-                <td>{{u.id}}</td>
-                <td>{{u.nome}}</td>
-                <td>{{u.email}}</td>
-                </tr>
-
-
+                <tr *ngFor="let u of users">
+                    <td>{{u.id}}</td>
+                    <td>{{u.nome}}</td>
+                    <td>{{u.email}}</td>
+               
+                <td>
+                    <i class="fas fa-pen" (click)="edit(u.id)"></i>
+                </td>
+                <td>
+                    <i class="fas fa-times-circle" (click)="remove(u.id)"></i>
+                </td>
+            </tr>
             </table>
 
 
-        </table>
+        
     </div>
 
 
