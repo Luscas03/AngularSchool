@@ -12,6 +12,7 @@ import { FormUsuarioComponent } from './pages/form-usuario/form-usuario.componen
 import { PageHomeComponent } from './pages/page-home/page-home.component';
 import { from } from 'rxjs';
 import { FormCursoComponent } from './pages/form-curso/form-curso.component';
+import { ListUsuarioComponent } from './pages/list-usuario/list-usuario.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { FormCursoComponent } from './pages/form-curso/form-curso.component';
     PageFooterComponent,
     FormUsuarioComponent,
     PageHomeComponent,
-    FormCursoComponent
+    FormCursoComponent,
+    ListUsuarioComponent
   ],
   imports: [
     BrowserModule,
