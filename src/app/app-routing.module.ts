@@ -24,6 +24,10 @@ component: PageHomeComponent
     component: FormCursoComponent,
   },
   {
+    path: "formCursos/:key",
+    component: FormCursoComponent,
+  },
+  {
     path: "formUser/:key",
     component: FormUsuarioComponent
   },

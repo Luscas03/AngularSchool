@@ -19,9 +19,15 @@ export class CursoService {
   return this.http.post(this.conn + this.colletion, curso);
   }
   public getAll(){
-  return this.http.get<Curso[]>(this.conn + this.colletion)
+  return this.http.get<Curso[]>(this.conn + this.colletion);
   }
   public get(id){
-    return this.http.get<Curso>(this.conn + this.colletion + "/" + id)
+    return this.http.get<Curso>(this.conn + this.colletion + "/" + id);
+    }
+    public update(curso:Curso, key:string){
+      return this.http.put(this.conn + this.colletion + "/" + key, curso);
+    }
+    public remove(key) {
+      return this.http.delete(this.conn + this.colletion + "/" + key);
     }
 }

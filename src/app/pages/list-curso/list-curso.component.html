@@ -20,6 +20,13 @@
                 <th>
                     Carga Horária
                 </th>
+                <th>
+             
+            
+                </th>
+                <th>
+                
+                </th>
             </tr>
             <tr *ngFor="let u of curso">
                 <td>{{u.id}}</td>
@@ -28,7 +35,12 @@
                 <td>{{u.datatermino}}</td>
                 <td>{{u.quanthoras}}</td>
                 <td>{{u.cargahoraria}}</td>
-               
+               <td>
+                <i class="fas fa-pen" (click)="edit(u.id)"></i>
+               </td>
+               <td>
+                <i class="fas fa-times-circle"  (click)="remove(u.id)"></i>
+               </td>
             </tr>
 
 
