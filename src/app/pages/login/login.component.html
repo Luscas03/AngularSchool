@@ -1,0 +1,30 @@
+<section class="container">
+    <form #fc="ngForm" (ngSubmit)="onsubmit(fc)">
+
+
+        <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" class="form-control" id="email" [(ngModel)]="email" placeholder="Seu email" name="email"
+                required />
+        </div>
+
+
+        <div class="form-group">
+            <label for="pws">Senha</label>
+            <input type="password" class="form-control" id="pws" [(ngModel)]="pws" placeholder="Senha" name="pws"
+                required minlength="7" #s="ngModel" />
+        </div>
+
+
+
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary" [disabled]="fc.invalid">
+                Entrar
+            </button>
+            <button type="reset" class="btn btn-danger" routerLink="">
+                Cancelar
+            </button>
+        </div>
+    </form>
+
+</section>

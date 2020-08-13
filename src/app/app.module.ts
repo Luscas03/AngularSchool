@@ -13,6 +13,12 @@ import { PageHomeComponent } from './pages/page-home/page-home.component';
 import { from } from 'rxjs';
 import { FormCursoComponent } from './pages/form-curso/form-curso.component';
 import { ListUsuarioComponent } from './pages/list-usuario/list-usuario.component';
+//Firebase
+import{ AngularFireModule } from '@angular/fire';
+import { environment } from '../environments/environment';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+import { LoginComponent } from './pages/login/login.component';
 
 @NgModule({
   declarations: [
@@ -23,13 +29,19 @@ import { ListUsuarioComponent } from './pages/list-usuario/list-usuario.componen
     FormUsuarioComponent,
     PageHomeComponent,
     FormCursoComponent,
-    ListUsuarioComponent
+    ListUsuarioComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFirestoreModule,
+    AngularFireAuthModule
+    
+
 
   ],
   providers: [],

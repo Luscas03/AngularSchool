@@ -21,7 +21,7 @@ public users: Usuario[] = [];
 
   }
   atualizaLista() {
-    this.userService.getAll().subscribe(
+    this.userService.listAllFire().subscribe(
       res => {
         this.users = res;
       }
@@ -33,9 +33,9 @@ public users: Usuario[] = [];
     this.router.navigate(["/formUser" , id]);
     
   }
-  remove(id){
+  remove(id, ativo){
     if (confirm("Deseja REALMENTE apagar?"))
-    this.userService.remove(id).subscribe(
+    this.userService.removeFire(id, ativo).then(
       res=>{
         this.atualizaLista();
       },

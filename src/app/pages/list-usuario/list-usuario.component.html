@@ -15,15 +15,15 @@
                    
                 </tr>
                 <tr *ngFor="let u of users">
-                    <td>{{u.id}}</td>
+                    <td>{{u.key}}</td>
                     <td>{{u.nome}}</td>
                     <td>{{u.email}}</td>
                
                 <td>
-                    <i class="fas fa-pen" (click)="edit(u.id)"></i>
+                    <i class="fas fa-pen" (click)="edit(u.key)"></i>
                 </td>
                 <td>
-                    <i class="fas fa-times-circle" (click)="remove(u.id)"></i>
+                    <i class="fas fa-times-circle" (click)="remove(u.key, u.ativo)"></i>
                 </td>
             </tr>
             </table>

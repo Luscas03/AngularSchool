@@ -18,4 +18,7 @@ export class CursoService {
     //http:3000 ~ LOCALHOST 
   return this.http.post(this.conn + this.colletion, curso);
   }
+  public getAll(){
+  return this.http.get(this.conn + this.colletion)
+  }
 }

@@ -4,6 +4,7 @@ import { FormUsuarioComponent } from './pages/form-usuario/form-usuario.componen
 import { PageHomeComponent } from './pages/page-home/page-home.component';
 import { FormCursoComponent } from './pages/form-curso/form-curso.component';
   import { from } from 'rxjs';
+import { LoginComponent } from './pages/login/login.component';
 
 const routes: Routes = [
   {
@@ -25,7 +26,12 @@ component: PageHomeComponent
   {
     path: "formUser/:key",
     component: FormUsuarioComponent
+  },
+  {
+    path: "login",
+    component: LoginComponent
   }
+
 
 ];
 
