@@ -28,6 +28,9 @@
 }
 form {
     background-color:  rgb(28,27,41);
-   padding: 10%;
+   padding: 5%;
    margin: 0.5%;
+}
+#btn1{
+    margin-right: 2%;
 }

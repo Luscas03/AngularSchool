@@ -19,7 +19,7 @@ export class ListCursoComponent implements OnInit {
     this.atualizaLista();
   }
   atualizaLista() {
-    this.cursoService.getAll().subscribe(
+    this.cursoService.getAllFire().subscribe(
       res => {
         this.curso = res;
 
@@ -33,7 +33,7 @@ edit(id){
 }
 remove(id){
   if(confirm("Deseja Realmente APAGAR?")) {
-  this.cursoService.remove(id).subscribe(
+  this.cursoService.removeFire(id).then(
     res=> {
       this.atualizaLista();
     },

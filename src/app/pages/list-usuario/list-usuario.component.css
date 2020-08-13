@@ -1,11 +1,12 @@
+
 .container {
-    color: white;
 
+    background-image: linear-gradient(to right, gray ,white);
+        color: black;
+  
 }
-table {
-margin: 1%;
-
-}
-tr {
-    border-color: yellow;
+#title{
+    margin-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
 }

@@ -24,7 +24,7 @@ private router:Router
     this.curso.ativo = true;
     this.key = this.activedRouter.snapshot.paramMap.get("key");
     if(this.key) {
-      this.cursoService.get(this.key).subscribe(
+      this.cursoService.getFire(this.key).subscribe(
         res=>{
           this.curso = res;
         }
@@ -40,7 +40,7 @@ private router:Router
     }
     else {
       if(this.key){
-        this.cursoService.update(this.curso,this.key).subscribe(
+        this.cursoService.updtadeFire(this.curso,this.key).then(
           res=>{
             alert("Atualizado!");
            // console.log(res);
@@ -54,7 +54,7 @@ private router:Router
           }
         )
       }else{
-      this.cursoService.add(this.curso).subscribe(
+      this.cursoService.addFire(this.curso).then(
         res=>{
           alert("Cadastrado!");
         //  console.log(res);

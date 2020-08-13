@@ -28,20 +28,20 @@
       </div>
 
       <div class="form-group">
-        <button type="submit" class="btn btn-primary" [disabled]="fc.invalid || s.value != c.value">
+        <button type="submit" class="btn btn-dark" id="btn1" [disabled]="fc.invalid || s.value != c.value">
           Salvar
         </button>
-        <button type="reset" class="btn btn-danger" routerLink="">
+        <button type="reset" class="btn btn-dark" id="btn2" routerLink="">
           Cancelar
         </button>
       </div>
     </div>
 
     <div class="form-group" *ngIf="key">
-      <button type="submit" class="btn btn-primary" [disabled]="fc.invalid">
+      <button type="submit" class="btn btn-dark" id="btn1" [disabled]="fc.invalid">
         Atualizar
       </button>
-      <button type="reset" class="btn btn-danger" routerLink="">
+      <button type="reset" class="btn btn-dark" id="btn2" routerLink="">
         Cancelar
       </button>
     </div>

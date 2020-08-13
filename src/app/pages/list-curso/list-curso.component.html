@@ -1,3 +1,4 @@
+<h1 class="container" id="title">Cursos:</h1>
 <section class="container">
     <div class="row">
         <table class="table">
@@ -29,17 +30,17 @@
                 </th>
             </tr>
             <tr *ngFor="let u of curso">
-                <td>{{u.id}}</td>
+                <td>{{u.key}}</td>
                 <td>{{u.nome}}</td>
                 <td>{{u.datainicio}}</td>
                 <td>{{u.datatermino}}</td>
                 <td>{{u.quanthoras}}</td>
                 <td>{{u.cargahoraria}}</td>
                <td>
-                <i class="fas fa-pen" (click)="edit(u.id)"></i>
+                <i class="fas fa-pen" (click)="edit(u.key)"></i>
                </td>
                <td>
-                <i class="fas fa-times-circle"  (click)="remove(u.id)"></i>
+                <i class="fas fa-times-circle"  (click)="remove(u.key)"></i>
                </td>
             </tr>
 
