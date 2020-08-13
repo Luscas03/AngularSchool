@@ -19,6 +19,7 @@ import { environment } from '../environments/environment';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { LoginComponent } from './pages/login/login.component';
+import { ListCursoComponent } from './pages/list-curso/list-curso.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { LoginComponent } from './pages/login/login.component';
     PageHomeComponent,
     FormCursoComponent,
     ListUsuarioComponent,
-    LoginComponent
+    LoginComponent,
+    ListCursoComponent
   ],
   imports: [
     BrowserModule,

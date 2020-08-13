@@ -1,0 +1,46 @@
+<section class="container">
+    <div class="row">
+        <table class="table">
+            <tr>
+                <th>
+                    Id
+                </th>
+                <th>
+                    Nome
+                </th>
+                <th>
+                    Início
+                </th>
+                <th>
+                    Término
+                </th>
+                <th>
+                    Quantidade de Horas
+                </th>
+                <th>
+                    Carga Horária
+                </th>
+            </tr>
+            <tr *ngFor="let u of curso">
+                <td>{{u.id}}</td>
+                <td>{{u.nome}}</td>
+                <td>{{u.datainicio}}</td>
+                <td>{{u.datatermino}}</td>
+                <td>{{u.quanthoras}}</td>
+                <td>{{u.cargahoraria}}</td>
+               
+            </tr>
+
+
+
+
+        </table>
+
+
+
+
+
+
+
+    </div>
+</section>
